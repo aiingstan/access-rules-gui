@@ -1,4 +1,5 @@
 data
+static/data
 .gitconfig
 package-lock.json
 
