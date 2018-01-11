@@ -39,11 +39,13 @@ def extract_data(filename):
     else:
         raise Exception('file not found!')
 
-filename = '../data/access-rules.txt'
-
+data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, 'data'))
+filename = os.path.join(data_dir, 'access-rules.txt')
+output = os.path.join(data_dir, 'parsed-data.json')
+print(filename)
 result = extract_data(filename)
 
 print([g for g,u_list in result['groups']])
 
-with open('../data/parsed-data.json', 'w') as f:
+with open(output, 'w') as f:
     f.write(json.dumps(result))
