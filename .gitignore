@@ -2,6 +2,7 @@ data
 static/data
 .gitconfig
 package-lock.json
+process_data/dbconnection.py
 
 .DS_Store
 node_modules/
@@ -18,3 +19,4 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+*.pyc
