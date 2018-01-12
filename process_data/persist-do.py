@@ -17,7 +17,7 @@ class Path():
     self._db_id = None
     self.access_rules = None
 
-recreate_db = True
+# recreate_db = True
 
 data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, 'data'))
 source = os.path.join(data_dir, 'parsed-data.json')
